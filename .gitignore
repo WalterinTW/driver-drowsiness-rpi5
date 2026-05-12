@@ -3,3 +3,40 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 *.egg-info/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and outputs
+logs/
+outputs/
+*.log
+*.csv
+
+# Large local media
+samples/*.mp4
+samples/*.avi
+samples/*.mov
+samples/*.mkv
+
+# Local config
+.env
