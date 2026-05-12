@@ -1,0 +1,2 @@
+# Raspberry Pi deployment dependencies will be added in later stages.
+# Future dependencies may include camera, GPIO, audio, or accelerator packages.

@@ -1,0 +1,15 @@
+thresholds:
+  ear:
+    warning: 0.25
+    danger: 0.20
+  mar:
+    warning: 0.60
+    danger: 0.75
+  perclos:
+    warning: 0.30
+    danger: 0.45
+
+alert_levels:
+  normal: 0
+  warning: 1
+  danger: 2

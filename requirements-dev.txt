@@ -1,0 +1,3 @@
+# macOS development dependencies will be added in later stages.
+# Install this package in editable mode with:
+# pip install -e .
