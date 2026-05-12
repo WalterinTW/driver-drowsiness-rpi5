@@ -1,2 +1,12 @@
-# Raspberry Pi deployment dependencies will be added in later stages.
-# Future dependencies may include camera, GPIO, audio, or accelerator packages.
+pytest>=8.0
+numpy>=1.26
+
+# Raspberry Pi 5 deployment notes:
+# - The Hailo AI Kit runtime is expected to come from the already-working
+#   Raspberry Pi/Hailo setup, not from PyPI.
+# - Install camera/OpenCV bindings with Raspberry Pi OS packages when needed,
+#   for example:
+#   sudo apt update
+#   sudo apt install -y python3-opencv
+# - Add project-specific Hailo Python packages here only after the working
+#   object detection example is adapted into inference/hailo_landmark.py.

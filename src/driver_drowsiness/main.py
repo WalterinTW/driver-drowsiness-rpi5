@@ -26,6 +26,28 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         help="Path to MediaPipe face_landmarker.task for MediaPipe Tasks API.",
     )
+    parser.add_argument(
+        "--source",
+        choices=("webcam", "video", "rpi-camera"),
+        default="webcam",
+        help="Frame source for demo mode.",
+    )
+    parser.add_argument(
+        "--backend",
+        choices=("mediapipe", "mock", "hailo"),
+        default="mediapipe",
+        help="Landmark backend for demo mode.",
+    )
+    parser.add_argument(
+        "--video-path",
+        type=Path,
+        help="Video file path when --source video is used.",
+    )
+    parser.add_argument(
+        "--hailo-model",
+        type=Path,
+        help="Future Hailo landmark model path for --backend hailo.",
+    )
     return parser
 
 
@@ -35,7 +57,14 @@ def main(argv: Sequence[str] | None = None) -> None:
     if args.demo == "webcam":
         from driver_drowsiness.demo.webcam import run_webcam_demo
 
-        run_webcam_demo(camera_index=args.camera_index, face_model=args.face_model)
+        run_webcam_demo(
+            camera_index=args.camera_index,
+            face_model=args.face_model,
+            source=args.source,
+            backend=args.backend,
+            video_path=args.video_path,
+            hailo_model=args.hailo_model,
+        )
         return
 
     print("Driver drowsiness detection app starting...")
