@@ -1,4 +1,6 @@
 pytest>=8.0
+opencv-contrib-python>=4.10
+mediapipe>=0.10.35
 
 # Install this package in editable mode with:
 # pip install -e .

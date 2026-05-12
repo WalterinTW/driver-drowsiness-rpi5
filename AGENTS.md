@@ -7,7 +7,7 @@ This project is developed on Windows 11 / macOS, but the final deployment target
 - Raspberry Pi 5
 - 64-bit Raspberry Pi OS
 - Python 3.x
-- Hardware may include GPIO, camera, I2C, SPI, UART, sensors, motors, or audio/video output.
+- Hardware may include Hailo AI kid, GPIO, camera, I2C, SPI, UART, sensors, motors, or audio/video output.
 
 ## Development rules
 
